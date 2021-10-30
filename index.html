@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- link style sheet -->
+    <link rel="stylesheet" href="./style.css">
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+    <h1>GAME</h1>
+    <div class="container">
+
+        <div class="score">
+         <p>computer : <span class="computer">00</span> </p>
+         <p>user : <span class="user">00</span></p>
+        </div>
+
+        <div class="icons">
+            <div id="rock" onclick="StartGame(id)"><i class="fas fa-hand-rock"></i></div>
+            <div  id="paper" onclick="StartGame(id)"><i class="fas fa-allergies"></i></div>
+            <div  id="scissor" onclick="StartGame(id)"><i class="fas fa-hand-scissors"></i></div>
+        </div>
+
+        <div class="winning-box">
+            <p>User Choice  : <span id="user-display"></span></p>
+            <p>computer Choice  : <span id="cpm-display"></span></p>
+            <span class="show-box"> winner  <span class="show-win"></span></span>
+        </div>
+        
+    </div>
+<script src="./script.js"></script>
+</body>
+
+</html>
