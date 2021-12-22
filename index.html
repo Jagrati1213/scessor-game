@@ -13,27 +13,31 @@
 </head>
 
 <body>
-    <h1>GAME</h1>
+    <!-- container -->
     <div class="container">
 
+        <!-- Score Board -->
         <div class="score">
          <p>computer : <span class="computer">00</span> </p>
          <p>user : <span class="user">00</span></p>
         </div>
 
+        <!-- show the icons-Box -->
         <div class="icons">
             <div id="rock" onclick="StartGame(id)"><i class="fas fa-hand-rock"></i></div>
             <div  id="paper" onclick="StartGame(id)"><i class="fas fa-allergies"></i></div>
             <div  id="scissor" onclick="StartGame(id)"><i class="fas fa-hand-scissors"></i></div>
         </div>
 
+        <!-- show the Winner -->
         <div class="winning-box">
-            <p>User Choice  : <span id="user-display"></span></p>
-            <p>computer Choice  : <span id="cpm-display"></span></p>
+            <p>User Choice  : <span id="user-display">--</span></p>
+            <p>computer Choice  : <span id="cpm-display">--</span></p>
             <span class="show-box"> winner  <span class="show-win"></span></span>
         </div>
         
     </div>
+    <!-- link js file -->
 <script src="./script.js"></script>
 </body>
 

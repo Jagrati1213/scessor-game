@@ -1,8 +1,8 @@
 //  game start...
 
 // store score here...
-var humanScore = 01;
-var AiScore = 01;
+var humanScore = 1;
+var AiScore = 1;
 
 // display how wins 
 var ShowWinner = document.querySelector(".winning-box .show-win");
@@ -25,11 +25,13 @@ function StartGame(userchoice) {
 
     winner(userchoice, computerchoice);
 }
+
 // winning conditions
 function winner(a, b) {
 
     userDisplay.innerHTML = a;
     cpmDisplay.innerHTML = b;
+    
 // 1st
     if (a == "rock") {
         if (b == "paper") {
