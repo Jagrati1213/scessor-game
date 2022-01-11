@@ -1,0 +1,2 @@
+# scessor-game
+JS projects
